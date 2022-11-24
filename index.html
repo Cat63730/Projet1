@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie ACCTY Art</title>
+    <!-- lier page html avec style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- mettre un icone dans l'onglet -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png"/>
 </head>
 <body>
+    
     <header>
-        <div class="Accty">
-            <h1>ACCTY Art</h1>
-        </div>
-        <nav class="Navigation">
+        <h1 class="accty">
+            Accty Art
+        </h1>
+        <nav class="navigation">
             <ul>
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="Galeries.html">Galeries</a></li>
@@ -21,9 +25,16 @@
             </ul>
         </nav>
         <div class="contact">
-            <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
-            <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+            <!-- mettre un container div par image pour les travailler plus facilement -->
+            <div class="image-container">
+                <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
+            </div>
+            <div class="image-container">
+                <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+            </div>
+            <div class="image-container">
             <a href="https://mailto:accty-art@gmail.com"><img src="./assets/mail.png" alt="logo mail pointant sur l'adresse mail"></a>
+            </div>
         </div>
     </header>
     <main class="flexContainer">
@@ -49,7 +60,7 @@
         </div>
     </main>
     <footer>
-        <h1>
+        <h1 class="text-footer">
             Cathy ARGUEL - Alexander CHASSIGNOL - 2022
         </h1>
     </footer>
