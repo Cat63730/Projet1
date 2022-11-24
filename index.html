@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- mettre un icone dans l'onglet -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png"/>
+    <script src="./main.js" async></script>
 </head>
 <body>
     
@@ -37,26 +38,28 @@
             </div>
         </div>
     </header>
-    <main class="flexContainer">
-        <div>
-            <img src="./assets/corpsEmpruntDesktop.png" alt="Vignette pointant vers la galerie Corps d'emprunt">
-            <li><a href="CorpsEmprunt.html">Plus de photos</a></li>
-            <p id="TitresGaleries">Corps d'emprunt</p>             
-        </div>
-        <div>
-            <img src="./assets/HeroHimselfDesktop.jpg" alt="Vignette pointant vers la galerie Hero Himself">
-            <li><a href="HeroHimself.html">Plus de photos</a></li>
-            <p id="TitresGaleries">Hero Himself</p>               
-        </div>
-        <div>
-            <img src="./assets/Mise SituationDesktop.png" alt="Vignette pointant vers la galerie Mises en situations">
-            <li><a href="MiseEnSituation.html">Plus de photos</a></li>
-            <p id="TitresGaleries">Mises en situations</p>               
-        </div>
-        <div>
-            <img src="./assets/BackstageDesktop.jpg" alt="Vignette pointant vers la galerie Backstages">
-            <li><a href="Backstages.html">Plus de photos</a></li>
-            <p id="TitresGaleries">Backstages</p>               
+    <main class="carousel">
+        <div class="carousel-panorama">
+            <div id="galerie-emprunt">
+                <img src="./assets/corpsEmpruntDesktop.png" alt="Vignette pointant vers la galerie Corps d'emprunt">
+                <li><a href="CorpsEmprunt.html">Plus de photos</a></li>
+                <p id="TitresGaleries">Corps d'emprunt</p>             
+            </div>
+            <div id="galerie-hero">
+                <img src="./assets/HeroHimselfDesktop.jpg" alt="Vignette pointant vers la galerie Hero Himself">
+                <li><a href="HeroHimself.html">Plus de photos</a></li>
+                <p id="TitresGaleries">Hero Himself</p>               
+            </div>
+            <div id="galerie-situation">
+                <img src="./assets/Mise SituationDesktop.png" alt="Vignette pointant vers la galerie Mises en situations">
+                <li><a href="MiseEnSituation.html">Plus de photos</a></li>
+                <p id="TitresGaleries">Mises en situations</p>               
+            </div>
+            <div id="galerie-backstage">
+                <img src="./assets/BackstageDesktop.jpg" alt="Vignette pointant vers la galerie Backstages">
+                <li><a href="Backstages.html">Plus de photos</a></li>
+                <p id="TitresGaleries">Backstages</p>               
+            </div>
         </div>
     </main>
     <footer>
