@@ -10,25 +10,33 @@ class carousel {
 
     constructor (element, options = {}){
         this.element =element
-        this.options = Object.assign({},{
+        this.options = object.assign({},{
             slidesToScroll: 1,
             slidesVisible: 1
         }, options)
-        let root = document.createElement('div')
-        root.setAttribute('class', 'carousel')
+        this.children = [].slice.call(element.children)
+        let root = this.createDivWithClass('carousel')
+        let container = this.createDivWithClass('carousel__container')
+        root.appendChild(container)
         this.element.appendChild(root)
-
     }
 
-    createDivWithClass (className){
-
+    createDivWithClass (className) {
+        let div = document.createElement('div')
+        div.setAttribute('class', className)
+        return div
     }
-    
+
 }
 
+/**
+ * 
+ * @param {string} className
+ * @returns {HTMLElement}
+ */
 
-document.addEventListener('DOMContentLoaded', Function(){
-    new carousel (document.querySelector('#galerie-emprunt'), {
+document.addEventListener('DOMContentLoaded', Function() {
+    new carousel(document.querySelector('#carousel1'), {
         slidesToScroll: 3,
         slidesVisible: 3
     }) 
