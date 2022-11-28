@@ -75,7 +75,18 @@ footer{
 /* MAIN INDEX.html */
 /* ____________________________________________________________________________________ */
 
+h2{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
 
+h2.titre{
+ 
+    width: 100%;
+}
 
 
 /* ____________________________________________________________________________________ */
@@ -98,4 +109,18 @@ footer{
 .imageCorps img{
     width: 100%;
     height: 100%;
+}
+
+.trait{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.box-trait{
+    width: 5vw;
+    /* border-top: 1px; */
+    /* border-top-color: black; */
+    border-top: solid;
 }
