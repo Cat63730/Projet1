@@ -66,7 +66,7 @@ footer{
 
 }
 
-   .text-footer{
+.text-footer{
     font-weight: 100;
     font-size: small;
 }
@@ -130,7 +130,7 @@ h2.titre{
 .trait{
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 }
 
@@ -351,18 +351,25 @@ img#imgSituation{
 /* _________________________________ Main creation___________________________________________*/
 /* _____________________________________________________________________________________ */
 
-main{
-    padding: 20px;
-}
 
 .creationMain{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
 }
 
+.texteCreation{
+    text-align: center;
+}
+
+#textCreation{
+    color: #BB542E;
+    font-size: large;
+}
+
 .photo{
-    width: 30%;
+    width: 50%;
 }
 
 #imgCreation{
@@ -378,11 +385,16 @@ main{
 .traitVertical{
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 10vh;
+    width: 100px;
+    height: 100px;
 }
 
 .box-traitVertical{
-    width: 5vw;
-    border: 2px solid #BB542E;
+    width: 100px;
+    border-left: 2px solid #BB542E;
+}
+
+.box-traitVerticalDroit{
+    width: 100px;
+    border-right: 2px solid #BB542E;
 }
