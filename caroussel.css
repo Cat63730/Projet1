@@ -77,6 +77,10 @@ footer{
     font-size: small;
 }
 
+h2.text-footer{
+  display: flex;
+  justify-content: flex-start;
+}
 /* ____________________________________________________________________________________ */
 /* MAIN INDEX.html */
 /* ____________________________________________________________________________________ */
@@ -112,7 +116,7 @@ p{
   text-shadow: 1px 1px 2px black;
 }
 
-.item__title{;
+.item__title{
   padding: 15px;
   border: 1px;
   border-color: #FFFFFF;
