@@ -298,7 +298,7 @@ img#imgSituation{
 }
 
 #bio{
-    border-left: #BB542E 1px solid;
+    border-left: #BB542E 2px solid;
     padding: 30px;
     width: 60%;
 }
@@ -346,4 +346,43 @@ img#imgSituation{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+/* _________________________________ Main creation___________________________________________*/
+/* _____________________________________________________________________________________ */
+
+main{
+    padding: 20px;
+}
+
+.creationMain{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.photo{
+    width: 30%;
+}
+
+#imgCreation{
+    padding: 30px;
+    width:100%;
+}
+
+#creationText{
+    padding: 30px;
+    width: 60%;
+}
+
+.traitVertical{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.box-traitVertical{
+    width: 5vw;
+    border: 2px solid #BB542E;
 }
