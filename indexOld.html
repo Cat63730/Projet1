@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie ACCTY Art</title>
     <!-- lier page html avec style.css -->
-    <link rel="stylesheet" href="caroussel.css">
+    <link rel="stylesheet" href="style.css">
     <!-- mettre un icone dans l'onglet -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png"/>
     
@@ -38,76 +38,13 @@
             </div>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="carousel">
-            <div id="content">
-                <div id="item">
-                    <button class="button">
-                        <li><a href="corpsEmprunt.html">Plus de photos</a></li>
-                    </button>
-                    <div class="item__title">
-                        <p>Corps d'emprunt</p>             
-                    </div>
-                </div>
-            </div>
-            <div id="content">
-                <div id="item">
-                    <button class="button">
-                        <li><a href="heroHimself.html">Plus de photos</a></li>
-                    </button>
-                    <div class="item__title">
-                        <p>Hero Himself</p>               
-                    </div>
-                </div>
-            </div>
-            <div id="content">
-                <div id="item">
-                    <button class="button">
-                        <li><a href="miseEnSituation.html">Plus de photos</a></li>
-                    </button>
-                    <div class="item__title">
-                        <p>Mises en situations</p>
-                    </div>
-                </div>
-            </div>
-            <div id="content">
-                <div id="item">
-                    <button class="button">
-                        <li><a href="backstages.html">Plus de photos</a></li>
-                    </button>
-                    <div class="item__title">
-                        <p>Backstages</p>
-                    </div>
-                </div>
-          </div>
-        </div>
-        <button id="prev">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-          </svg>
-        </button>
-        <button id="next">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-          </svg>
-        </button>
-      </div>
-    <!-- <main>
+    <main>
             <div id="carousel">
-                <div class="item2">
-                    <div class="item__body2">
+                <div class="item">
+                    <div class="item__image">
+                        <img src="./assets/Idiosyncrase.jpg" alt="Vignette pointant vers la galerie Corps d'emprunt">
+                    </div>
+                    <div class="item__body">
                         <div class="item__description">
                             <li><a href="CorpsEmprunt.html">Plus de photos</a></li>
                         </div>
@@ -116,8 +53,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="item2">
-                   <div class="item__body2">
+                <div class="item">
+                    <div class="item__image">
+                        <img src="./assets/HeroHimselfDesktop.jpg" alt="Vignette pointant vers la galerie Hero Himself">
+                    </div>
+                    <div class="item__body">
                         <div class="item__description">
                             <li><a href="HeroHimself.html">Plus de photos</a></li>
                         </div>
@@ -126,8 +66,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="item2">
-                    <div class="item__body2">
+                <div class="item">
+                    <div class="item__image">
+                            <img src="./assets/Mise SituationDesktop.png" alt="Vignette pointant vers la galerie Mises en situations">
+                    </div>
+                    <div class="item__body">
                         <div class="item__description">
                             <li><a href="MiseEnSituation.html">Plus de photos</a></li>
                         </div>
@@ -136,25 +79,32 @@
                         </div> 
                     </div>
                 </div>
-                <div class="item2">
-                    <div class="item__body2">
-                        <button class="button">
-                            <li><a href="backstages.html">Plus de photos</a></li>
-                        </button>
-                        <div class="item__title2">
+                <div class="item">
+                    <div class="item__image">
+                        <img src="./assets/BackstageDesktop.jpg" alt="Vignette pointant vers la galerie Backstages">
+                    </div>
+                    <div class="item__body">
+                        <div class="item__description">
+                            <li><a href="Backstages.html">Plus de photos</a></li>
+                        </div>
+                        <div class="item__title">
                             <p>Backstages</p>
                         </div>
                     </div>
                 </div>
+                <div class="carousel">
+                    <div class="carousel__container">                                           
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
         
-    <!-- </main> -->
+    </main>
     <footer>
         <h2 class="text-footer">
             Cathy ARGUEL - Alexander CHASSIGNOL - 2022
         </h2>
     </footer>
-    <script src="caroussel.js" async></script>
-</body>
+    <script src="./main.js" async></script>
+    </body>
 </html>
