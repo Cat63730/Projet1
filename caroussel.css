@@ -269,3 +269,8 @@ body {
 .title{
   border:#FFFFFF 1px solid;
 }
+
+#content {
+  display: flex;
+  flex-direction: row;
+}

@@ -273,7 +273,7 @@ img.imgBackstage{
     flex-grow: 1;
 }
 
-img#imgSituation{
+img.imgSituation{
     
     max-height: 100%;
     min-width: 100%;
@@ -376,12 +376,12 @@ img#imgSituation{
     width: 50%;
 }
 
-#imgCreation{
+.imgCreation{
     padding: 30px;
     width:100%;
 }
 
-#creationText{
+.creationText{
     padding: 30px;
     width: 60%;
 }
