@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,28 @@
     <!-- lier page html avec style.css -->
     <link rel="stylesheet" href="caroussel.css">
     <!-- mettre un icone dans l'onglet -->
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png"/>
-    
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png">
 </head>
 <body>
-    
     <header>
         <h1 class="accty">
             Accty Art
         </h1>
         <nav class="navigation">
             <ul>
-                <li><a href="index.html" id="lienMenu">Home</a></li>
-                <li><a href="galeries.html" id="lienMenu">Galeries</a></li>
-                <li><a href="biographie.html" id="lienMenu">Biographie</a></li>
-                <li><a href="laCreation.html" id="lienMenu">La création</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="corpsEmprunt.html">Galeries</a></li>
+                <li><a href="biographie.html">Biographie</a></li>
+                <li><a href="laCreation.html">La création</a></li>
             </ul>
+        </nav>
+        <nav class="navbar-mobile">
+                <ul class="nav-list-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="corpsEmprunt.html">Galeries</a></li>
+                    <li><a href="biographie.html">Biographie</a></li>
+                    <li><a href="laCreation.html">La création</a></li>
+                </ul>
         </nav>
         <div class="contact">
             <!-- mettre un container div par image pour les travailler plus facilement -->
@@ -41,47 +47,38 @@
     <div id="wrapper">
         <div id="carousel">
             <div id="content">
-                <div id="item1">
                     <div class="item__title">
                         <p>Corps d'emprunt</p>             
                     </div>
                     <div class="title">
-                        <a id="article" href="corpsEmprunt.html">Plus de photos</a></li>
+                        <a class="article" href="corpsEmprunt.html">Plus de photos</a>
                     </div>
-
                 </div>
-            </div>
-            <div id="content">
                 <div id="item2">
                     <div class="item__title">
                         <p>Hero Himself</p>               
                     </div>
                     <div class="title">
-                        <a id="article" href="heroHimself.html">Plus de photos</a>
+                        <a class="article" href="heroHimself.html">Plus de photos</a>
                     </div>
 
                 </div>
-            </div>
-            <div id="content">
                 <div id="item3">
                     <div class="item__title">
                         <p>Mises en situations</p>
                     </div>
                     <div class="title">
-                        <a id="article" href="miseEnSituation.html">Plus de photos</a>
+                        <a class="article" href="miseEnSituation.html">Plus de photos</a>
                     </div>
                 </div>
-            </div>
-            <div id="content">
                 <div id="item4">
                     <div class="item__title">
                         <p>Backstages</p>
                     </div>
                     <div class="title">
-                        <a id="article" href="backstages.html">Plus de photos</a>
+                        <a class="article" href="backstages.html">Plus de photos</a>
                     </div>
                 </div>
-          </div>
         </div>
         <button id="prev">
           <svg

@@ -1,41 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 /* _______________________________________________________________________________ */
 /* head */
 /* _______________________________________________________________________________ */
 
 header {
-    background-color: #FFFFFF;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 10vh;
+  background-color: #FFFFFF;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10vh;
 }
 
 h1.accty{
-    padding-top: 20px;
-    font-weight: 400;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.navigation {
+  display: none;
+}
+
+.nav-list-mobile {
+  position: fixed;
+  top: -50vh;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #b36868;
+}
+
+.nav-list-mobile li {
+  font-weight: 800;
 }
 
 /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
-ul{ width: 30vw;}
+ul{ 
+  width: 30vw;
+}
 
 nav ul {
-    font-weight: lighter;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    }
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
 
 li a{
   color:black;
@@ -43,38 +66,37 @@ li a{
 
  /* je donne une largeur à mon container d'image pour rappetisser mes icones */
 .image-container{
-    width: 20px;
+  width: 20px;
 }
 
 /* j'adapte la taille de mes images au container d'images  */
 .image-container img{
-    width: 100%;
+  width: 100%;
 }
 
 .contact{
-    width: 10vw;
-    display: flex;
-    justify-content: space-around;
-    /* le align center pour que mes icones soient alignés */
-    align-items: center;
-    padding-top: 25px;
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  /* le align center pour que mes icones soient alignés */
+  align-items: center;
+  padding-top: 25px;
 }
 /* ____________________________________________________________________________________ */
 /* Footer */
 /* ____________________________________________________________________________________ */
 
 footer{
-    height: 10vh;
-    display: flex;
-    align-items: flex-start;
-    padding-left: 5vw;
-    background-color:#FFFFFF;
-
+  height: 10vh;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 5vw;
+  background-color:#FFFFFF;
 }
 
-   .text-footer{
-    font-weight: 100;
-    font-size: small;
+.text-footer{
+  font-weight: 100;
+  font-size: small;
 }
 
 h2.text-footer{
@@ -86,11 +108,11 @@ h2.text-footer{
 /* ____________________________________________________________________________________ */
 
 h2{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 h2.titre{
@@ -125,7 +147,7 @@ p{
 a{
   color: #FFFFFF;
 }
-a #article{
+a .article{
   color: #FFFFFF;
   text-shadow: 1px 1px 2px black;
 }
@@ -133,119 +155,117 @@ a #article{
 /* _________________________________________________________ */
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: normal;
-    flex-direction: column;
-    height: 100vh;
-    background-color:#FFFFFF;
-  }
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: normal;
+  flex-direction: column;
+  height: 100vh;
+  background-color:#FFFFFF;
+}
   
-  #wrapper {
+#wrapper {
+  width: 100%;
+  /* max-width: 964px; */
+  height: 90%;
+  position: relative;
+}
+  
+#carousel {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+  
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
 
-    width: 100%;
-    /* max-width: 964px; */
-    height: 90%;
-    position: relative;
-  }
-  
-  #carousel {
-    
-    display: flex;
-    overflow: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  }
-  
-  #carousel::-webkit-scrollbar {
-    height: 0;
-  }
-  
-  #prev,
-  #next {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background: white;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-  }
-  
-  #prev {
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    display: none;
-  }
-  
-  #next {
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  #item1 {  
-    background-image: url(/assets/Idiosyncrase.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 1vw;
-    width: 33vw;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
 
-  #item2 {    
-    background-image: url(/assets/HeroHimselfDesktop.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 1vw;
-    width: 33vw;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
 
-  #item3 {    
-    background-image: url(/assets/SituationDesktop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 1vw;
-    width: 33vw;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+  
+  
+#item1 {  
+  background-image: url(/assets/Idiosyncrase.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1vw;
+  width: 33vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  #item4 {    
-    background-image: url(/assets/BackstageDesktop.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 1vw;
-    width: 33vw;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }  
+#item2 {    
+  background-image: url(/assets/HeroHimselfDesktop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1vw;
+  width: 33vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .title{
-    border:#FFFFFF 1px solid;
-  }
+#item3 {    
+  background-image: url(/assets/SituationDesktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1vw;
+  width: 33vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#item4 {    
+  background-image: url(/assets/BackstageDesktop.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1vw;
+  width: 33vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}  
+
+.title{
+  border:#FFFFFF 1px solid;
+}
