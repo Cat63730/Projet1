@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="caroussel.css">
     <!-- mettre un icone dans l'onglet -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/21870f6938.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -24,12 +25,26 @@
             </ul>
         </nav>
         <nav class="navbar-mobile">
+            <i class="fa-solid fa-bars"></i>
+            <div class="menu">
                 <ul class="nav-list-mobile">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="corpsEmprunt.html">Galeries</a></li>
                     <li><a href="biographie.html">Biographie</a></li>
                     <li><a href="laCreation.html">La création</a></li>
+                
                 </ul>
+                <div class="contact">
+                    <div class="image-container">
+                        <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
+                    </div>
+                    <div class="image-container">
+                        <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+                    </div>
+                    <div class="image-container">
+                    <a href="https://mailto:accty-art@gmail.com"><img src="./assets/mail.png" alt="logo mail pointant sur l'adresse mail"></a>
+                </div>
+            </div>
         </nav>
         <div class="contact">
             <!-- mettre un container div par image pour les travailler plus facilement -->
@@ -44,66 +59,66 @@
             </div>
         </div>
     </header>
-    <div id="wrapper">
-        <div id="carousel">
-            <div id="content">
-                <div id="item1">
-                    <div class="item__title">
-                        <p>Corps d'emprunt</p>             
+    <main>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <div id="item1">
+                        <div class="item__title">
+                            <p>Corps d'emprunt</p>             
+                        </div>
+                        <div class="title">
+                            <a class="article" href="corpsEmprunt.html">Plus de photos</a>
+                        </div>
                     </div>
-                    <div class="title">
-                        <a class="article" href="corpsEmprunt.html">Plus de photos</a>
-                    </div>
-                </div>
-                <div id="item2">
-                    <div class="item__title">
-                        <p>Hero Himself</p>               
-                    </div>
-                    <div class="title">
-                        <a class="article" href="heroHimself.html">Plus de photos</a>
-                    </div>
+                    <div id="item2">
+                        <div class="item__title">
+                            <p>Hero Himself</p>               
+                        </div>
+                        <div class="title">
+                            <a class="article" href="heroHimself.html">Plus de photos</a>
+                        </div>
 
-                </div>
-                <div id="item3">
-                    <div class="item__title">
-                        <p>Mises en situations</p>
                     </div>
-                    <div class="title">
-                        <a class="article" href="miseEnSituation.html">Plus de photos</a>
+                    <div id="item3">
+                        <div class="item__title">
+                            <p>Mises en situations</p>
+                        </div>
+                        <div class="title">
+                            <a class="article" href="miseEnSituation.html">Plus de photos</a>
+                        </div>
                     </div>
-                </div>
-                <div id="item4">
-                    <div class="item__title">
-                        <p>Backstages</p>
+                    <div id="item4">
+                        <div class="item__title">
+                            <p>Backstages</p>
+                        </div>
+                        <div class="title">
+                            <a class="article" href="backstages.html">Plus de photos</a>
+                        </div>
                     </div>
-                    <div class="title">
-                        <a class="article" href="backstages.html">Plus de photos</a>
-                    </div>
-                </div>
+            </div>
+            <button id="prev">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"            >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                </svg>
+            </button>
+            <button id="next">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"            >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                </svg>
+            </button>
         </div>
-        <button id="prev">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-          </svg>
-        </button>
-        <button id="next">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path fill="none" d="M0 0h24v24H0V0z" />
-            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-          </svg>
-        </button>
-      </div>
+    </main>
     <footer>
         <h2 class="text-footer">
             Cathy ARGUEL - Alexander CHASSIGNOL - 2022

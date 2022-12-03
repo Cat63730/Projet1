@@ -1,3 +1,16 @@
+// Lorsque je clique sur l'icone du menu burger, l'élément navbar-mobile apparait
+
+const icon = document.querySelector (".fa-bars")
+const list = document.querySelector (".nav-list-mobile");
+
+icon.addEventListener("click", function(){
+  list.classList.toggle("list-visible");
+  console.log (list);
+})
+
+// carroussel de la page index.html
+
+
 const gap = 16;
 
 const carousel = document.getElementById("carousel"),
