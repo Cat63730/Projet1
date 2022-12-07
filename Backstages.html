@@ -10,6 +10,7 @@
       type="image/png"
       href="./assets/favicon-32x32.png"
     />
+    <script src="https://kit.fontawesome.com/21870f6938.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -23,7 +24,32 @@
           <li><a href="laCreation.html">La création</a></li>
         </ul>
       </nav>
-      <div class="contact">
+      <nav class="navbar-mobile">
+        <i class="fa-solid fa-bars"></i>
+        <div class="menu">
+            <div class="vide"></div>
+            <ul class="nav-list-mobile">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="corpsEmprunt.html">Galeries</a></li>
+                <li><a href="biographie.html">Biographie</a></li>
+                <li><a href="laCreation.html">La création</a></li>
+                <div class="contact-mobile">
+                    <div class="image-container-mobile">
+                        <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
+                    </div>
+                    <div class="image-container-mobile">
+                        <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+                    </div>
+                    <div class="image-container-mobile">
+                    <a href="https://mailto:accty-art@gmail.com"><img src="./assets/mail.png" alt="logo mail pointant sur l'adresse mail"></a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+      <div class="contact-desktop">
         <!-- mettre un container div par image pour les travailler plus facilement -->
         <div class="image-container">
           <a href="https://www.facebook.com/CathyCreaArtistiques"
@@ -292,5 +318,6 @@
     <footer>
       <h2 class="text-footer">Cathy ARGUEL - Alexander CHASSIGNOL - 2022</h2>
     </footer>
+    <script src="caroussel.js" async></script>
   </body>
 </html>

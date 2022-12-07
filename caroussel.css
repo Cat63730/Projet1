@@ -117,6 +117,9 @@ h1.accty {
 
 /* ____________________________________________________________________________________________ */
 
+/* _________________________________nav barre__________________________________ */
+
+
 /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
 ul {
   width: 30vw;
@@ -156,6 +159,17 @@ li .contact-desktop {
   padding-top: 25px;
 }
 
+
+/* ____________________________sous menu________________________________________________ */
+/* _____________________________________________________________________________________ */
+
+
+#ul-sous-menu{
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* Footer */
 /* ____________________________________________________________________________________ */
 
@@ -167,6 +181,10 @@ footer {
   /* align-items: flex-start; */
   padding-left: 5vw;
   background-color: #ffffff;
+}
+
+.footer{
+  position: relative;
 }
 
 .text-footer {
