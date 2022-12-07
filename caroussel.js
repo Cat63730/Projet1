@@ -1,7 +1,8 @@
 // Lorsque je clique sur l'icone du menu burger, l'élément navbar-mobile apparait
 
 const icon = document.querySelector(".fa-bars");
-const list = document.querySelector(".nav-list-mobile");
+// const list = document.querySelector(".nav-list-mobile");
+const list = document.querySelector(".menu");
 
 icon.addEventListener("click", function () {
   list.classList.toggle("list-visible");
