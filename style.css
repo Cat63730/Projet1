@@ -26,6 +26,87 @@ h1.accty{
     font-weight: 400;
 }
 
+/* __________________________________sous menu____________________________________________ */
+
+
+
+nav ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+nav a:hover{
+  color: #040404;
+  border-bottom: 2px solid #5F9965;
+}
+
+.ul-sous-menu{
+  display: none;
+  box-shadow: 0px 1px 2px rgb(74, 82, 74);
+  background-color: #ffffff;
+}
+
+nav > ul li:hover .ul-sous-menu{
+  display: block;
+}
+
+
+.ul-sous-menu li{
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+.ul-sous-menu a{
+  padding: 10px;
+  border-bottom: none;
+}
+
+.ul-sous-menu a:hover{
+  border-bottom: none;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.sous-menu > a::after{
+  content:"▼";
+  font-size: 12px;
+}
+
+.ul-sous-menu{
+  display: none;
+  box-shadow: 0px 1px 2px rgb(122, 151, 123);
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  z-index: 1200;
+}
+
+nav ul li{
+  float:left;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+
+/* ________________________________fin sous menu______________________________ */
+
+
 /* ____________________menu burger______________________________________________ */
 /* ______________________________________________________________________________ */
 
@@ -115,12 +196,9 @@ h1.accty{
     }
   }
   
-  /* ____________________________________________________________________________________________ */
+  /* ____________________________________________nav bar________________________________________________ */
     
   /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
-  ul {
-    width: 30vw;
-  }
   
   nav ul {
     font-weight: lighter;
@@ -224,7 +302,7 @@ h1.accty{
   
 
 /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
-ul{ width: 30vw;}
+ul{ width: 50vw;}
 
 nav ul {
     font-weight: lighter;
