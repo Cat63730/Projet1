@@ -151,6 +151,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     background-color: #ffffff;
     /* transition: top 0.5s ; */
@@ -159,6 +160,10 @@ nav ul li{
   
   .nav-list-mobile li {
     font-weight: 800;
+  }
+
+  .a-mobile{
+    text-align: start;
   }
   
   .list-visible {
@@ -209,6 +214,8 @@ nav ul li{
   
   li a {
     color: black;
+    display: flex;
+    justify-content: center;
   }
   
   li .contact-desktop {
