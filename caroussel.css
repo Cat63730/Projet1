@@ -10,7 +10,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 /* _______________________________________________________________________________ */
-/* head */
+/* header */
 /* _______________________________________________________________________________ */
 
 header {
@@ -26,7 +26,8 @@ h1.accty{
   padding-top: 20px;
   font-weight: 400;
 }
-
+/* ____________________menu burger______________________________________________ */
+/* ______________________________________________________________________________ */
 
 .navbar-mobile { 
 
@@ -68,17 +69,40 @@ h1.accty{
   top: 0;
 }
 
+.contact-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* le align center pour que mes icones soient alignés */
+  align-items: center;
+  padding-top: 25px;
+}
+
+ /* je donne une largeur à mon container d'image pour rappetisser mes icones */
+ .image-container-mobile{
+  width: 15%;
+}
+
+/* j'adapte la taille de mes images au container d'images  */
+.image-container-mobile img{
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .navigation{
     display: none;
   }
-  .contact .image-container {
+  .contact-desktop .image-container {
     display: none;
   }
   .navbar-mobile {
     display: block;
   }
 }
+
+/* ____________________________________________________________________________________________ */
+
+
 
 /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
 ul{ 
@@ -96,7 +120,7 @@ li a{
   color:black;
 }
 
-li .contact {
+li .contact-desktop {
   color: black;
 }
 
@@ -110,7 +134,7 @@ li .contact {
   width: 100%;
 }
 
-.contact {
+.contact-desktop {
   width: 10vw;
   display: flex;
   justify-content: space-around;
@@ -119,10 +143,6 @@ li .contact {
   padding-top: 25px;
 }
 
-/* .contact .image-container {
-  display: none;
-} */
-/* ____________________________________________________________________________________ */
 /* Footer */
 /* ____________________________________________________________________________________ */
 

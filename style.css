@@ -26,9 +26,83 @@ h1.accty{
     font-weight: 400;
 }
 
-/* .navigation {
+/* ____________________menu burger______________________________________________ */
+/* ______________________________________________________________________________ */
+
+.navbar-mobile { 
+
+    /*  pour définir l'ordre des calques et donc pour que mon menu passe devant les photos  */
+    z-index: 998;
     display: none;
-} */
+  
+  }
+  
+  .navbar-mobile i {
+    z-index: 999;
+    font-size: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  
+  }
+  
+  .nav-list-mobile {
+    position: fixed;
+    top: -100vh;
+    left: 50vw;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #FFFFFF;
+    transition: top 0.5s ;
+    font-size: xx-large;
+  }
+  
+  .nav-list-mobile li {
+    font-weight: 800;
+  }
+  
+  .list-visible {
+    top: 0;
+  }
+  
+  .contact-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* le align center pour que mes icones soient alignés */
+    align-items: center;
+    padding-top: 25px;
+  }
+  
+   /* je donne une largeur à mon container d'image pour rappetisser mes icones */
+   .image-container-mobile{
+    width: 15%;
+  }
+  
+  /* j'adapte la taille de mes images au container d'images  */
+  .image-container-mobile img{
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .navigation{
+      display: none;
+    }
+    .contact-desktop .image-container {
+      display: none;
+    }
+    .navbar-mobile {
+      display: block;
+    }
+  }
+
+/* ________________________________________________________________________________________ */
+
+
 
 /* je donne une largeur à mon container ul pour que je puisse faire un sapce arround autour de mes liens */
 ul{ width: 30vw;}
@@ -50,7 +124,7 @@ nav ul {
     width: 100%;
 }
 
-.contact{
+.contact-desktop{
     width: 10vw;
     display: flex;
     justify-content: space-around;
