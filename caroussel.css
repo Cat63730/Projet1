@@ -104,6 +104,32 @@ h1.accty {
   width: 100%;
 }
 
+.navbar-mobile ul {
+  display: flex;
+  flex-direction: column;
+ }
+
+.li-ss-menu-burger{
+  font-size: 20px;
+  text-align: right;
+}
+
+.li-ss-menu-burger1{
+  font-size: 20px;
+  text-align: right;
+}
+.ss-menu-burger{
+  display: none;
+}
+
+.a-mobile{
+  font-size: 32px;
+  color: black;
+  font-family: 'Roboto Condensed';
+  text-shadow: none;
+}
+
+
 @media screen and (max-width: 800px) {
   .navigation {
     display: none;
@@ -115,6 +141,8 @@ h1.accty {
     display: block;
   }
 }
+
+
 
 /* ____________________________________________________________________________________________ */
 
@@ -482,6 +510,6 @@ body {
   }
 
 
-  
+
 }
 

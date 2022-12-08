@@ -39,3 +39,47 @@ prev.addEventListener("click", (e) => {
 
 let width = carousel.offsetWidth;
 window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+
+
+// Lorsque je clique sur le menu galeries dans le menu burger, 
+// le sous menu s'affiche
+
+const galerie =document.querySelector(".a-mobile");
+const sousMenu =document.querySelector(".ss-menu-burger");
+
+galerie.addEventListener("click",() => {
+  sousMenu.style.display = "block";
+})
+
+
+// Lorsque je clique sur un extrait de photo dans une galerie, la photo correspondante s'affiche en grand
+
+
+const modal = document.querySelector("#myModal");
+
+let smallsImgs = document.querySelectorAll(".smallImg");
+
+const bigImg = document.querySelector(".modal-content img");
+
+for (let i = 0; i < smallsImgs.length; i++) {
+  smallsImgs[i].addEventListener("click", () => {
+    let smallImgSrc = smallsImgs[i].src.split("/").pop();
+    bigImg.src = `./assets/copy_${smallImgSrc}`;
+    modal.style.display = "block";
+  });
+}
+
+// smallsImgs = [...smallsImgs];
+
+// smallsImgs.map((smallImg) => {
+//   smallImg.addEventListener("click", () => {
+//     let smallImgSrc = smallImg.src.split("/").pop();
+//     console.log(smallImgSrc);
+//     bigImg.src = `./assets/copy_${smallImgSrc}`;
+//     modal.style.display = "block";
+//   });
+// });
+
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
