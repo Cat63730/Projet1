@@ -683,7 +683,8 @@ img.imgSituation{
 /* _____________________________________________________________________________________ */
 
 
-.creationMain{
+.creationMain1,
+.creationMain2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -730,15 +731,34 @@ img.imgSituation{
     border-right: 2px solid #BB542E;
 }
 
-
-/* _______________media queries______________________*/
-
 @media screen and (max-width:600px){
-  .flexContainer{
-   
+  .creationMain1{
+    display: flex;
+    flex-direction: column;
   }
 
-}
+  .creationMain2{
+    display:flex;
+    flex-direction: column-reverse;
+  }
 
+  .creationText{
+    width: 90%;
+  }
+
+  .traitVertical{
+    height: 10px;
+    border-bottom: #BB542E 2px solid;
+  }
+
+  .box-traitVerticalDroit, .box-traitVertical{
+    display: none;
+  }
+
+  .photo{
+    margin: auto;
+  }
+}
+/* _______________media queries______________________*/
 
 
