@@ -401,13 +401,13 @@ h2.titre{
 }
 
 .imageCorps {
-    width: 15%;
+    width: 320px;
     height: auto;
 }
 
 .imageCorps img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .trait{
@@ -419,10 +419,9 @@ h2.titre{
 
 .box-trait{
     width: 5vw;
-    /* border-top: 1px; */
-    /* border-top-color: black; */
     border-top: solid;
 }
+
 
 
 /* ______________________________________________Slider____________________________ */
@@ -607,7 +606,7 @@ img.imgSituation{
 }
 
 #imgCathy{
-    width: 30%;
+    width: 50%;
 }
 
 #alex{
@@ -616,11 +615,11 @@ img.imgSituation{
 }
 
 #imgAlex{
-    width: 30%;
+    width: 50%;
 }
 
 .bioIconeContainer{
-    width: 20px;
+    width: 20vw;
     text-align: center;
 }
 
@@ -632,6 +631,52 @@ img.imgSituation{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width:600px){
+  .biographieMain{
+    display: block;
+  }
+  #bio{
+    margin: auto;
+    width: 90%;
+    border-top: #BB542E solid;
+    border-left: none;
+  }
+
+  .paragraphe{
+    margin: auto;
+    width: 50%;
+    padding-bottom: 10vh;
+  }
+
+  .vignettesBio{
+    display: block;
+  }
+
+  #cathy{
+    margin:auto;
+    width: auto;
+  }
+
+  #alex{
+    margin: auto;
+    width: auto;
+    padding-top: 5vh;
+  }
+
+  .contact-desktop{
+    width: 50%;
+  }
+
+  .bioIconeContainer a img{
+    width: 10vw;
+  }
+
+  .bioIconeContainer{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* _________________________________ Main creation___________________________________________*/
@@ -684,3 +729,16 @@ img.imgSituation{
     width: 100px;
     border-right: 2px solid #BB542E;
 }
+
+
+/* _______________media queries______________________*/
+
+@media screen and (max-width:600px){
+  .flexContainer{
+   
+  }
+
+}
+
+
+

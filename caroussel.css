@@ -476,7 +476,12 @@ body {
     font-size: xx-large;
   }
   
-  }
+  
   #next, #prev{
     display: none;
   }
+
+
+  
+}
+
