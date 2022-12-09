@@ -195,10 +195,11 @@ nav ul li{
   text-align: right;
 }
 
-.li-ss-menu-burger1{
+/* .li-ss-menu-burger1{
   font-size: 20px;
   text-align: right;
-}
+} */
+
 .ss-menu-burger{
   display: none;
 }
