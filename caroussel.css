@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 
 h1.accty {
@@ -114,12 +114,17 @@ h1.accty {
   text-align: right;
 }
 
-.li-ss-menu-burger1{
+/* .li-ss-menu-burger1{
   font-size: 20px;
   text-align: right;
-}
+}  */
+
 .ss-menu-burger{
   display: none;
+}
+
+p.a-mobile{
+  ;
 }
 
 .a-mobile{
