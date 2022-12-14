@@ -412,7 +412,7 @@ body {
 }
 
 #item1 {
-  background-image: url(/assets/Idiosyncrase.jpg);
+  background-image: url(./assets/Idiosyncrase.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -426,7 +426,7 @@ body {
 }
 
 #item2 {
-  background-image: url(/assets/HeroHimselfDesktop.jpg);
+  background-image: url(./assets/HeroHimselfDesktop.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -440,7 +440,7 @@ body {
 }
 
 #item3 {
-  background-image: url(/assets/SituationDesktop.png);
+  background-image: url(./assets/SituationDesktop.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -454,7 +454,7 @@ body {
 }
 
 #item4 {
-  background-image: url(/assets/BackstageDesktop.jpg);
+  background-image: url(./assets/BackstageDesktop.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -474,6 +474,7 @@ body {
 #content {
   display: flex;
   flex-direction: row;
+  padding: 15vh;
 }
 
 
