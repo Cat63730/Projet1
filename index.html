@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie ACCTY Art</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png"/>
+    <!-- lier page html avec style.css -->
+    <link rel="stylesheet" href="caroussel.css">
+    <!-- mettre un icone dans l'onglet -->
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/21870f6938.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="Accty">
-            <h1>ACCTY Art</h1>
-        </div>
-        <nav class="Navigation">
+        <h1 class="accty">
+            Accty Art
+        </h1>
+        <nav class="navigation">
             <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Galeries.html">Galeries</a></li>
-                <li><a href="Biographie.html">Biographie</a></li>
-                <li><a href="Creation.html">La création</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="corpsEmprunt.html">Galeries</a>
+                    <ul class="ul-sous-menu">
+                        <li><a class="sous-menu" href="corpsEmprunt.html">Corps d'emprunt</a></li>
+                        <li><a class="sous-menu" href="heroHimself.html">Hero himself</a></li>
+                        <li><a class="sous-menu" href="miseEnSituation.html">Mises en situation</a></li>
+                        <li><a class="sous-menu" href="backstages.html">Backstages</a></li>
+                    </ul>
+                </li>
+                <li><a href="biographie.html">Biographie</a></li>
+                <li><a href="laCreation.html">La création</a></li>
             </ul>
         </nav>
-        <div class="contact">
-            <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
-            <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+        <nav class="navbar-mobile">
+            <i class="fa-solid fa-bars"></i>
+            <div class="menu">
+                <div class="vide"></div>
+                <ul class="nav-list-mobile">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><p class="a-mobile">Galeries</p>
+                        <div class="ss-menu-burger">
+                            <ul>
+                                <li><a class="li-ss-menu-burger" href="corpsEmprunt.html">Corps d'emprunt</a></li>
+                                <li><a class="li-ss-menu-burger" href="heroHimself.html">Hero himself</a></li>
+                                <li><a class="li-ss-menu-burger" href="miseEnSituation.html">Mises en situation</a></li>
+                                <li><a class="li-ss-menu-burger" href="backstages.html">Backstages</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="biographie.html">Biographie</a></li>
+                    <li><a href="laCreation.html">La création</a></li>
+                    <div class="contact-mobile">
+                        <div class="image-container-mobile">
+                            <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
+                        </div>
+                        <div class="image-container-mobile">
+                            <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+                        </div>
+                        <div class="image-container-mobile">
+                        <a href="https://mailto:accty-art@gmail.com"><img src="./assets/mail.png" alt="logo mail pointant sur l'adresse mail"></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="contact-desktop">
+            <!-- mettre un container div par image pour les travailler plus facilement -->
+            <div class="image-container">
+                <a href="https://www.facebook.com/CathyCreaArtistiques"><img src="./assets/facebook-new.png" alt="logo facebook pointant sur la page d'accueil facebook"> </a>
+            </div>
+            <div class="image-container">
+                <a href="https://www.instagram.com/accty_art/"><img src="./assets/instagram.png" alt="logo instagram pointant sur la page d'accueil instagram"></a>
+            </div>
+            <div class="image-container">
             <a href="https://mailto:accty-art@gmail.com"><img src="./assets/mail.png" alt="logo mail pointant sur l'adresse mail"></a>
+            </div>
         </div>
     </header>
-    <main class="flexContainer">
-        <div>
-            <img src="./assets/"
+    <main>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <div id="item1">
+                        <div class="item__title">
+                            <p>Corps d'emprunt</p>             
+                        </div>
+                        <div class="title">
+                            <a class="article" href="corpsEmprunt.html">Plus de photos</a>
+                        </div>
+                    </div>
+                    <div id="item2">
+                        <div class="item__title">
+                            <p>Hero Himself</p>               
+                        </div>
+                        <div class="title">
+                            <a class="article" href="heroHimself.html">Plus de photos</a>
+                        </div>
+
+                    </div>
+                    <div id="item3">
+                        <div class="item__title">
+                            <p>Mises en situations</p>
+                        </div>
+                        <div class="title">
+                            <a class="article" href="miseEnSituation.html">Plus de photos</a>
+                        </div>
+                    </div>
+                    <div id="item4">
+                        <div class="item__title">
+                            <p>Backstages</p>
+                        </div>
+                        <div class="title">
+                            <a class="article" href="backstages.html">Plus de photos</a>
+                        </div>
+                    </div>
+            </div>
+            <button id="prev">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"            >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                </svg>
+            </button>
+            <button id="next">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"            >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                </svg>
+            </button>
         </div>
     </main>
-    <footer>
-        <h1>
-            <p>
-                Cathy ARGUEL - Alexander CHASSIGNOL - 2022
-            </p>
-        </h1>
+    <footer class="footer-index">
+        <h2 class="text-footer">
+            Cathy ARGUEL - Alexander CHASSIGNOL - 2022
+        </h2>
     </footer>
-    
+    <script src="caroussel.js" async></script>
 </body>
 </html>
