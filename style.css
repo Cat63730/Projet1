@@ -105,7 +105,44 @@ nav ul li{
 
 
 /* ________________________________fin sous menu______________________________ */
+li a {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
 
+li .contact-desktop {
+  color: black;
+}
+
+/* je donne une largeur à mon container d'image pour rappetisser mes icones */
+.image-container {
+  width: 20px;
+}
+
+/* j'adapte la taille de mes images au container d'images  */
+.image-container img {
+  width: 100%;
+}
+
+.contact-desktop {
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  /* le align center pour que mes icones soient alignés */
+  align-items: center;
+  padding-top: 25px;
+}
+
+
+/* ____________________________sous menu________________________________________________ */
+/* _____________________________________________________________________________________ */
+
+
+#ul-sous-menu{
+  display: flex;
+  flex-direction: column;
+}
 
 /* ____________________menu burger______________________________________________ */
 /* ______________________________________________________________________________ */
@@ -124,6 +161,19 @@ nav ul li{
   right: 5%;
 }
 
+.navbar-mobile-bio {
+  /*  pour définir l'ordre des calques et donc pour que mon menu passe devant les photos  */
+  z-index: 998;
+  display: none;
+}
+
+.navbar-mobile-bio i {
+  z-index: 1001;
+  font-size: 50px;
+  position: fixed;
+  top: 2%;
+  right: 5%;
+}
 .menu {
   z-index: 1000;
   display: flex;
@@ -190,6 +240,13 @@ nav ul li{
   flex-direction: column;
  }
 
+ .navbar-mobile-bio ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ }
+
 .li-ss-menu-burger{
   font-size: 20px;
   text-align: right;
@@ -221,6 +278,11 @@ nav ul li{
     .navbar-mobile {
       display: block;
     }
+
+    .navbar-mobile-bio {
+      display: block;
+    }
+
   }
   
   /* ____________________________________________nav bar________________________________________________ */
@@ -801,7 +863,7 @@ img.imgSituation{
 
 /* Modal content box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #000000;
   margin: 10vh 10vh;
   padding: 20px;
   height: 80vh;
@@ -811,6 +873,6 @@ img.imgSituation{
 .modal-content img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
